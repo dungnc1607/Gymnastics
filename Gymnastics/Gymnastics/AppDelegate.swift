@@ -24,22 +24,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        window  = UIWindow(frame: UIScreen.main.bounds)
-        let mainVC:GGymVC = GGymVC(nibName: GGymVC.typeName, bundle: Bundle.main)
-        self.window?.rootViewController = mainVC
-        window?.makeKeyAndVisible()
+        
         
         createTabbarController()
+        window  = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = tabbarController
+        window?.makeKeyAndVisible()
         return true
     }
 
     func createTabbarController() {
         tabbarController = UITabBarController()
         tabbarController?.delegate = self
+        
+        
         //1st
         let gymVC:GGymVC = GGymVC(nibName: GGymVC.typeName, bundle: Bundle.main)
-        let tabbarItemGym = UITabBarItem(title: "Gym", image: nil, selectedImage: nil)
+        let tabbarItemGym = UITabBarItem(title: "Gym", image: UIImage(named: "ic_dumbell")?.withRenderingMode(.alwaysOriginal), selectedImage: nil)
+        //UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Arial", size: 20)], for: .normal)
+        let appearance = UITabBarItem.appearance()
+        let attributes = [NSAttributedStringKey.font: keyFont, NSAttributedStringKey.foregroundColor: unselectedColor]
+        appearance.setTitleTextAttributes(attributes, for: .normal)
         gymVC.tabBarItem = tabbarItemGym
+        tabbarItemGym.imageInsets = UIEdgeInsets.zero
         navGym = UINavigationController(rootViewController: gymVC)
         
         //2nd

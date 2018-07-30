@@ -17,6 +17,7 @@
 		E60350DD2109AB3500D6A96B /* GNavigationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60350DC2109AB3500D6A96B /* GNavigationVM.swift */; };
 		E60350DF2109AC0800D6A96B /* GBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60350DE2109AC0800D6A96B /* GBaseVC.swift */; };
 		E60350E12109AD9700D6A96B /* GBaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60350E02109AD9700D6A96B /* GBaseVM.swift */; };
+		E605010E210F191700DE2EEA /* GConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605010D210F191700DE2EEA /* GConstant.swift */; };
 		E629939E210EC3E700EAD973 /* GReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E629939C210EC3E700EAD973 /* GReportVC.swift */; };
 		E629939F210EC3E700EAD973 /* GReportVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E629939D210EC3E700EAD973 /* GReportVC.xib */; };
 		E62993A2210EC40000EAD973 /* GHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62993A0210EC40000EAD973 /* GHistoryVC.swift */; };
@@ -66,6 +67,7 @@
 		E60350DC2109AB3500D6A96B /* GNavigationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNavigationVM.swift; sourceTree = "<group>"; };
 		E60350DE2109AC0800D6A96B /* GBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBaseVC.swift; sourceTree = "<group>"; };
 		E60350E02109AD9700D6A96B /* GBaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBaseVM.swift; sourceTree = "<group>"; };
+		E605010D210F191700DE2EEA /* GConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GConstant.swift; sourceTree = "<group>"; };
 		E629939C210EC3E700EAD973 /* GReportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GReportVC.swift; sourceTree = "<group>"; };
 		E629939D210EC3E700EAD973 /* GReportVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GReportVC.xib; sourceTree = "<group>"; };
 		E62993A0210EC40000EAD973 /* GHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHistoryVC.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 		E60350B521099F4600D6A96B /* Gymnastics */ = {
 			isa = PBXGroup;
 			children = (
+				E605010C210F190500DE2EEA /* Constant */,
 				E62993AD210EC58000EAD973 /* Extension */,
 				E60350DB2109A92700D6A96B /* ViewModel */,
 				E60350DA2109A92000D6A96B /* View */,
@@ -194,6 +197,14 @@
 				E60350E02109AD9700D6A96B /* GBaseVM.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E605010C210F190500DE2EEA /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				E605010D210F191700DE2EEA /* GConstant.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 		E6299398210EC35800EAD973 /* GGymVC */ = {
@@ -413,6 +424,7 @@
 				E62993C7210EC5B800EAD973 /* String.swift in Sources */,
 				E62993C5210EC5B800EAD973 /* UITableViewExtension.swift in Sources */,
 				E629939E210EC3E700EAD973 /* GReportVC.swift in Sources */,
+				E605010E210F191700DE2EEA /* GConstant.swift in Sources */,
 				E62993BE210EC5B800EAD973 /* UIColor.swift in Sources */,
 				E62993C4210EC5B800EAD973 /* UIView.swift in Sources */,
 				E62993BB210EC5B800EAD973 /* UIApplication.swift in Sources */,
