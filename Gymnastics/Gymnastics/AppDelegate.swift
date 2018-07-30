@@ -12,16 +12,58 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var tabbarController:UITabBarController?
+    
+    var navGym:UINavigationController?
+    var navCardio:UINavigationController?
+    var navHistory:UINavigationController?
+    var navReport:UINavigationController?
+    
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        window  = UIWindow(frame: UIScreen.main.bounds)
+        let mainVC:GGymVC = GGymVC(nibName: GGymVC.typeName, bundle: Bundle.main)
+        self.window?.rootViewController = mainVC
+        window?.makeKeyAndVisible()
         
-        
+        createTabbarController()
         return true
     }
 
+    func createTabbarController() {
+        tabbarController = UITabBarController()
+        tabbarController?.delegate = self
+        //1st
+        let gymVC:GGymVC = GGymVC(nibName: GGymVC.typeName, bundle: Bundle.main)
+        let tabbarItemGym = UITabBarItem(title: "Gym", image: nil, selectedImage: nil)
+        gymVC.tabBarItem = tabbarItemGym
+        navGym = UINavigationController(rootViewController: gymVC)
+        
+        //2nd
+        let cardioVC:GCardioVC = GCardioVC(nibName: GCardioVC.typeName, bundle: Bundle.main)
+        let tabbarItemCardio = UITabBarItem(title: "Cardio", image: nil, selectedImage: nil)
+        cardioVC.tabBarItem = tabbarItemCardio
+        navCardio = UINavigationController(rootViewController: cardioVC)
+        
+        //3rd
+        let historyVC:GHistoryVC = GHistoryVC(nibName: GHistoryVC.typeName, bundle: Bundle.main)
+        let tabbarItemHistory = UITabBarItem(title: "History", image: nil, selectedImage: nil)
+        historyVC.tabBarItem = tabbarItemHistory
+        navHistory = UINavigationController(rootViewController: historyVC)
+        
+        //4th
+        let reportVC:GReportVC = GReportVC(nibName: GReportVC.typeName, bundle: Bundle.main)
+        let tabbarItemReport = UITabBarItem(title: "Report", image: nil, selectedImage: nil)
+        reportVC.tabBarItem = tabbarItemReport
+        navReport = UINavigationController(rootViewController: reportVC)
+        
+        tabbarController?.viewControllers = [navGym, navCardio, navHistory, navReport] as? [UIViewController]
+        tabbarController?.customizableViewControllers = [navGym, navCardio, navHistory, navReport] as? [UIViewController]
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -90,6 +132,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
+        
 }
+
+extension AppDelegate:UITabBarControllerDelegate{
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        return true
+    }
+}
+
 

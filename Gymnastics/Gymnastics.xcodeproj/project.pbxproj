@@ -17,6 +17,27 @@
 		E60350DD2109AB3500D6A96B /* GNavigationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60350DC2109AB3500D6A96B /* GNavigationVM.swift */; };
 		E60350DF2109AC0800D6A96B /* GBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60350DE2109AC0800D6A96B /* GBaseVC.swift */; };
 		E60350E12109AD9700D6A96B /* GBaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60350E02109AD9700D6A96B /* GBaseVM.swift */; };
+		E629939E210EC3E700EAD973 /* GReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E629939C210EC3E700EAD973 /* GReportVC.swift */; };
+		E629939F210EC3E700EAD973 /* GReportVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E629939D210EC3E700EAD973 /* GReportVC.xib */; };
+		E62993A2210EC40000EAD973 /* GHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62993A0210EC40000EAD973 /* GHistoryVC.swift */; };
+		E62993A3210EC40000EAD973 /* GHistoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E62993A1210EC40000EAD973 /* GHistoryVC.xib */; };
+		E62993A6210EC41000EAD973 /* GCardioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62993A4210EC41000EAD973 /* GCardioVC.swift */; };
+		E62993A7210EC41000EAD973 /* GCardioVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E62993A5210EC41000EAD973 /* GCardioVC.xib */; };
+		E62993AA210EC41D00EAD973 /* GGymVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62993A8210EC41D00EAD973 /* GGymVC.swift */; };
+		E62993AB210EC41D00EAD973 /* GGymVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E62993A9210EC41D00EAD973 /* GGymVC.xib */; };
+		E62993BB210EC5B800EAD973 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62993AE210EC5B700EAD973 /* UIApplication.swift */; };
+		E62993BC210EC5B800EAD973 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62993AF210EC5B700EAD973 /* UIViewController.swift */; };
+		E62993BD210EC5B800EAD973 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62993B0210EC5B700EAD973 /* UIViewExtensions.swift */; };
+		E62993BE210EC5B800EAD973 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62993B1210EC5B700EAD973 /* UIColor.swift */; };
+		E62993BF210EC5B800EAD973 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62993B2210EC5B700EAD973 /* Collection.swift */; };
+		E62993C0210EC5B800EAD973 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62993B3210EC5B700EAD973 /* NSObject.swift */; };
+		E62993C1210EC5B800EAD973 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62993B4210EC5B700EAD973 /* UIImageView.swift */; };
+		E62993C2210EC5B800EAD973 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62993B5210EC5B700EAD973 /* UIImage.swift */; };
+		E62993C4210EC5B800EAD973 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62993B7210EC5B700EAD973 /* UIView.swift */; };
+		E62993C5210EC5B800EAD973 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62993B8210EC5B800EAD973 /* UITableViewExtension.swift */; };
+		E62993C6210EC5B800EAD973 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62993B9210EC5B800EAD973 /* UITextField.swift */; };
+		E62993C7210EC5B800EAD973 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62993BA210EC5B800EAD973 /* String.swift */; };
+		E62993C9210ECBBE00EAD973 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62993C8210ECBBE00EAD973 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +66,27 @@
 		E60350DC2109AB3500D6A96B /* GNavigationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNavigationVM.swift; sourceTree = "<group>"; };
 		E60350DE2109AC0800D6A96B /* GBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBaseVC.swift; sourceTree = "<group>"; };
 		E60350E02109AD9700D6A96B /* GBaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBaseVM.swift; sourceTree = "<group>"; };
+		E629939C210EC3E700EAD973 /* GReportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GReportVC.swift; sourceTree = "<group>"; };
+		E629939D210EC3E700EAD973 /* GReportVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GReportVC.xib; sourceTree = "<group>"; };
+		E62993A0210EC40000EAD973 /* GHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHistoryVC.swift; sourceTree = "<group>"; };
+		E62993A1210EC40000EAD973 /* GHistoryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GHistoryVC.xib; sourceTree = "<group>"; };
+		E62993A4210EC41000EAD973 /* GCardioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCardioVC.swift; sourceTree = "<group>"; };
+		E62993A5210EC41000EAD973 /* GCardioVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GCardioVC.xib; sourceTree = "<group>"; };
+		E62993A8210EC41D00EAD973 /* GGymVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGymVC.swift; sourceTree = "<group>"; };
+		E62993A9210EC41D00EAD973 /* GGymVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GGymVC.xib; sourceTree = "<group>"; };
+		E62993AE210EC5B700EAD973 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		E62993AF210EC5B700EAD973 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		E62993B0210EC5B700EAD973 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		E62993B1210EC5B700EAD973 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		E62993B2210EC5B700EAD973 /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		E62993B3210EC5B700EAD973 /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		E62993B4210EC5B700EAD973 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		E62993B5210EC5B700EAD973 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		E62993B7210EC5B700EAD973 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		E62993B8210EC5B800EAD973 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		E62993B9210EC5B800EAD973 /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		E62993BA210EC5B800EAD973 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		E62993C8210ECBBE00EAD973 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F33EA8B85744AC9A3CF27663 /* Pods-Gymnastics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gymnastics.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gymnastics/Pods-Gymnastics.release.xcconfig"; sourceTree = "<group>"; };
 		FEB8C0B5248142EC81A6D8F3 /* Pods-Gymnastics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gymnastics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gymnastics/Pods-Gymnastics.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +153,7 @@
 		E60350B521099F4600D6A96B /* Gymnastics */ = {
 			isa = PBXGroup;
 			children = (
+				E62993AD210EC58000EAD973 /* Extension */,
 				E60350DB2109A92700D6A96B /* ViewModel */,
 				E60350DA2109A92000D6A96B /* View */,
 				E60350D92109A91300D6A96B /* Model */,
@@ -120,6 +163,7 @@
 				E60350C221099F4900D6A96B /* LaunchScreen.storyboard */,
 				E60350C521099F4900D6A96B /* Info.plist */,
 				E60350BD21099F4600D6A96B /* Gymnastics.xcdatamodeld */,
+				E62993C8210ECBBE00EAD973 /* AppCoordinator.swift */,
 			);
 			path = Gymnastics;
 			sourceTree = "<group>";
@@ -134,6 +178,10 @@
 		E60350DA2109A92000D6A96B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E629939B210EC37C00EAD973 /* GReportVC */,
+				E629939A210EC37100EAD973 /* GHistoryVC */,
+				E6299399210EC36600EAD973 /* GCardioVC */,
+				E6299398210EC35800EAD973 /* GGymVC */,
 				E60350DE2109AC0800D6A96B /* GBaseVC.swift */,
 			);
 			path = View;
@@ -146,6 +194,61 @@
 				E60350E02109AD9700D6A96B /* GBaseVM.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E6299398210EC35800EAD973 /* GGymVC */ = {
+			isa = PBXGroup;
+			children = (
+				E62993A8210EC41D00EAD973 /* GGymVC.swift */,
+				E62993A9210EC41D00EAD973 /* GGymVC.xib */,
+			);
+			path = GGymVC;
+			sourceTree = "<group>";
+		};
+		E6299399210EC36600EAD973 /* GCardioVC */ = {
+			isa = PBXGroup;
+			children = (
+				E62993A4210EC41000EAD973 /* GCardioVC.swift */,
+				E62993A5210EC41000EAD973 /* GCardioVC.xib */,
+			);
+			path = GCardioVC;
+			sourceTree = "<group>";
+		};
+		E629939A210EC37100EAD973 /* GHistoryVC */ = {
+			isa = PBXGroup;
+			children = (
+				E62993A0210EC40000EAD973 /* GHistoryVC.swift */,
+				E62993A1210EC40000EAD973 /* GHistoryVC.xib */,
+			);
+			path = GHistoryVC;
+			sourceTree = "<group>";
+		};
+		E629939B210EC37C00EAD973 /* GReportVC */ = {
+			isa = PBXGroup;
+			children = (
+				E629939C210EC3E700EAD973 /* GReportVC.swift */,
+				E629939D210EC3E700EAD973 /* GReportVC.xib */,
+			);
+			path = GReportVC;
+			sourceTree = "<group>";
+		};
+		E62993AD210EC58000EAD973 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E62993B2210EC5B700EAD973 /* Collection.swift */,
+				E62993B3210EC5B700EAD973 /* NSObject.swift */,
+				E62993BA210EC5B800EAD973 /* String.swift */,
+				E62993AE210EC5B700EAD973 /* UIApplication.swift */,
+				E62993B1210EC5B700EAD973 /* UIColor.swift */,
+				E62993B5210EC5B700EAD973 /* UIImage.swift */,
+				E62993B4210EC5B700EAD973 /* UIImageView.swift */,
+				E62993B8210EC5B800EAD973 /* UITableViewExtension.swift */,
+				E62993B9210EC5B800EAD973 /* UITextField.swift */,
+				E62993B7210EC5B700EAD973 /* UIView.swift */,
+				E62993AF210EC5B700EAD973 /* UIViewController.swift */,
+				E62993B0210EC5B700EAD973 /* UIViewExtensions.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +335,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E60350C421099F4900D6A96B /* LaunchScreen.storyboard in Resources */,
+				E62993AB210EC41D00EAD973 /* GGymVC.xib in Resources */,
 				E60350C121099F4900D6A96B /* Assets.xcassets in Resources */,
+				E629939F210EC3E700EAD973 /* GReportVC.xib in Resources */,
 				E60350BC21099F4600D6A96B /* Main.storyboard in Resources */,
+				E62993A7210EC41000EAD973 /* GCardioVC.xib in Resources */,
+				E62993A3210EC40000EAD973 /* GHistoryVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +399,25 @@
 			files = (
 				E60350DD2109AB3500D6A96B /* GNavigationVM.swift in Sources */,
 				E60350BF21099F4600D6A96B /* Gymnastics.xcdatamodeld in Sources */,
+				E62993C6210EC5B800EAD973 /* UITextField.swift in Sources */,
 				E60350E12109AD9700D6A96B /* GBaseVM.swift in Sources */,
+				E62993BC210EC5B800EAD973 /* UIViewController.swift in Sources */,
+				E62993A2210EC40000EAD973 /* GHistoryVC.swift in Sources */,
+				E62993C9210ECBBE00EAD973 /* AppCoordinator.swift in Sources */,
+				E62993BF210EC5B800EAD973 /* Collection.swift in Sources */,
+				E62993C2210EC5B800EAD973 /* UIImage.swift in Sources */,
+				E62993A6210EC41000EAD973 /* GCardioVC.swift in Sources */,
+				E62993AA210EC41D00EAD973 /* GGymVC.swift in Sources */,
+				E62993C1210EC5B800EAD973 /* UIImageView.swift in Sources */,
 				E60350B721099F4600D6A96B /* AppDelegate.swift in Sources */,
+				E62993C7210EC5B800EAD973 /* String.swift in Sources */,
+				E62993C5210EC5B800EAD973 /* UITableViewExtension.swift in Sources */,
+				E629939E210EC3E700EAD973 /* GReportVC.swift in Sources */,
+				E62993BE210EC5B800EAD973 /* UIColor.swift in Sources */,
+				E62993C4210EC5B800EAD973 /* UIView.swift in Sources */,
+				E62993BB210EC5B800EAD973 /* UIApplication.swift in Sources */,
+				E62993C0210EC5B800EAD973 /* NSObject.swift in Sources */,
+				E62993BD210EC5B800EAD973 /* UIViewExtensions.swift in Sources */,
 				E60350DF2109AC0800D6A96B /* GBaseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
