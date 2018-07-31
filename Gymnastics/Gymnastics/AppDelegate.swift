@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 
+let GDelegate = UIApplication.shared.delegate as! AppDelegate
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -23,12 +25,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        
-        
+    
         createTabbarController()
         window  = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = tabbarController
+        let vc:GFakeLaunchVC = GFakeLaunchVC(nibName: GFakeLaunchVC.typeName, bundle: Bundle.main)
+        window?.rootViewController = UINavigationController(rootViewController: vc)
+        self.window?.rootViewController = /*tabbarController*/ vc
         window?.makeKeyAndVisible()
         return true
     }
@@ -36,39 +38,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func createTabbarController() {
         tabbarController = UITabBarController()
         tabbarController?.delegate = self
-        
+        let appearance = UITabBarItem.appearance()
         
         //1st
         let gymVC:GGymVC = GGymVC(nibName: GGymVC.typeName, bundle: Bundle.main)
-        let tabbarItemGym = UITabBarItem(title: "Gym", image: UIImage(named: "ic_dumbell")?.withRenderingMode(.alwaysOriginal), selectedImage: nil)
-        //UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Arial", size: 20)], for: .normal)
-        let appearance = UITabBarItem.appearance()
-        let attributes = [NSAttributedStringKey.font: keyFont, NSAttributedStringKey.foregroundColor: unselectedColor]
-        appearance.setTitleTextAttributes(attributes, for: .normal)
+        let tabbarItemGym = UITabBarItem(title: "Gym", image: UIImage(named: "ic_dumbell")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "ic_selected_dumbell")?.withRenderingMode(.alwaysOriginal))
         gymVC.tabBarItem = tabbarItemGym
         tabbarItemGym.imageInsets = UIEdgeInsets.zero
         navGym = UINavigationController(rootViewController: gymVC)
         
         //2nd
         let cardioVC:GCardioVC = GCardioVC(nibName: GCardioVC.typeName, bundle: Bundle.main)
-        let tabbarItemCardio = UITabBarItem(title: "Cardio", image: nil, selectedImage: nil)
+        let tabbarItemCardio = UITabBarItem(title: "Cardio", image: UIImage(named: "ic_cardio")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "ic_selected_cardio")?.withRenderingMode(.alwaysOriginal))
         cardioVC.tabBarItem = tabbarItemCardio
         navCardio = UINavigationController(rootViewController: cardioVC)
         
         //3rd
         let historyVC:GHistoryVC = GHistoryVC(nibName: GHistoryVC.typeName, bundle: Bundle.main)
-        let tabbarItemHistory = UITabBarItem(title: "History", image: nil, selectedImage: nil)
+        let tabbarItemHistory = UITabBarItem(title: "History", image: UIImage(named: "ic_history")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "ic_selected_history")?.withRenderingMode(.alwaysOriginal))
         historyVC.tabBarItem = tabbarItemHistory
         navHistory = UINavigationController(rootViewController: historyVC)
         
         //4th
         let reportVC:GReportVC = GReportVC(nibName: GReportVC.typeName, bundle: Bundle.main)
-        let tabbarItemReport = UITabBarItem(title: "Report", image: nil, selectedImage: nil)
+        let tabbarItemReport = UITabBarItem(title: "Report", image: UIImage(named: "ic_report")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "ic_selected_report")?.withRenderingMode(.alwaysOriginal))
         reportVC.tabBarItem = tabbarItemReport
         navReport = UINavigationController(rootViewController: reportVC)
         
+        appearance.setTitleTextAttributes(normalAtrributes, for: .normal)
+        appearance.setTitleTextAttributes(selectedAttributes, for: .selected)
+        
         tabbarController?.viewControllers = [navGym, navCardio, navHistory, navReport] as? [UIViewController]
         tabbarController?.customizableViewControllers = [navGym, navCardio, navHistory, navReport] as? [UIViewController]
+    }
+    
+    func startupProcess(){
+        //        navigationController?.setNavigationBarHidden(false, animated: false)
+        window?.rootViewController = UINavigationController(rootViewController: tabbarController!)
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
